@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce</title>
+    <title>Ecommerce - Home</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 
     <header>
-        <h1>Tienda Muebles</h1>
+        <h1 class="nombre-sitio">Tienda <span> Muebles </span></h1>
     </header>   
     
-    <nav>
-        <a href="index.html">Inicio</a>    
-        <a href="nosotros.html">Nosotros</a>    
-        <a href="tienda.html">Tienda</a>    
-        <a href="galeria.html">Galeria</a>    
-        <a href="contacto.html">Contacto</a>        
-    </nav>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>    
+            <a href="tienda.html">Tienda</a>    
+            <a href="galeria.html">Galeria</a>    
+            <a href="nosotros.html">Nosotros</a>    
+            <a href="contacto.html">Contacto</a>        
+        </nav>
+    </div>
+
+
+    <div class="hero"></div>
 
     <section>
-        <h2>Categoria de Productos</h2>
+        <h2>Categoria de <span> Productos </span></h2>
 
         <div>
             <img src="img/categoria1.jpg" alt="categoria">  
@@ -36,11 +43,24 @@
         </div>
     </section>
 
+    <section class="sobre-nosotros">
+        <div>
+            <h2>Sobre Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis nostrum quos et dignissimos quidem amet, iste possimus expedita. Earum sequi odit deleniti saepe assumenda minus eos illum facere repudiandae.</p>
+        </div>
+    </section>
+
+    <section class="sobre-empresa">
+        <div>
+            <h2>Sobre Empresa</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis nostrum quos et dignissimos quidem amet, iste possimus expedita. Earum sequi odit deleniti saepe assumenda minus eos illum facere repudiandae.</p>
+        </div>
+    </section>
 
 
     <main>
         <div>
-            <h2>Sobre Nosotros</h2>
+            <h2>Nuestros Productos</h2>
 
             <div>
                 <div>
@@ -130,8 +150,8 @@
     <footer>
         <div>
             <h3>Categorias</h3>
-            <nav>
-                <a href="#">Cocina</a>
+            <nav id="navegacion">
+                <a class="enlace" href="#">Cocina</a>
                 <a href="#">Oficina</a>
                 <a href="#">Jardín</a>
                 <a href="#">Cochera</a>
@@ -141,7 +161,7 @@
 
         <div>
             <h3>Nosotros</h3>
-            <nav>
+            <nav class="navegacion">
                 <a href="#">Nuestra Historia</a>
                 <a href="#">Misión, Visión y Valores</a>
                 <a href="#">Carreras</a>
