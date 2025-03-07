@@ -1,6 +1,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
+    font-size: 62.5%; /*hack un 1rem = 10px*/
 }
 
 *,
@@ -9,25 +10,53 @@ html {
     box-sizing: inherit;
 }
 
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
 /** Globales **/
 a {
     text-decoration: none;
     color: #000;
 }
 
+h1, h2, h3 {
+    font-family: "Playfair", serif;
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
 .contenedor {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
-.contenedor-navegacion {
-    border-top: 1px solid #e1e1e1;
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /** Header y Navegacion **/
+.contenedor-navegacion {
+    border-top: .1rem solid #e1e1e1;
+}
+
 .nombre-sitio {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5rem;
     text-align: center;
 }
 
@@ -36,14 +65,17 @@ a {
 }
 
 .nav-principal {
-    padding: 20px 0;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero {
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    background-position: center center;
+    height: 55rem;
 }
 
 .navegacion {
@@ -54,85 +86,53 @@ a {
     color: #037bc0;
 }
 
-/** Display inline y block **/
-/*
-.nav-principal {
-    border-top: 1px solid #e1e1e1;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 20px 0 20px 0;
+.categorias {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
-.nav-principal {
-    border-color: #e1e1e1;
-    border-top-style: solid;
-    border-width: 1px;
-    -- lo de arriba es lo mismo que lo de abajo --
-    border-top: 1px solid #e1e1e1;
----------------------------------
-    padding-top: 50px;
-    padding-right: 0px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    -- lo de arriba es lo mismo que lo de abajo --
-    padding: 50px 0 30px 0px;
-}*/
-
-
-
-/*
-
-.sobre-nosotros {
-    background-color: red;
-    width: 200px;
-    padding: 25px;
-    box-sizing: border-box;
+.categorias h2 {
+    text-align: center;
 }
 
-.sobre-empresa {
-    background-color: blue;
-    width: 500px;
-    padding: 100px;
-    box-sizing: border-box;
+.categorias a{
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
 }
 
-h1 {
-    color: #000;
+.categorias a:hover{
+   background-color: #037bc0; 
+   color: #fff;
+   font-size: 1.9rem;
+   border-bottom-right-radius: 1rem;
 }
 
-.enlace {
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    color: #037bc0;
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
-.color-rojo {
-  color: red;      
+/** Bloque nosotros **/
+
+.sobre-nosotros{
+    background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100%)
+    , url(../img/nosotros.jpg);
+    background-position: left center;
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
 }
 
-nav a {
-    text-transform: uppercase;
+.sobre-nosotros-flexbox {
+    display: flex;
+    justify-content: flex-end;
 }
 
-h2 span {
-    color: green;
+.texto-nosotros {
+    flex-basis: 50%;
+    padding-left: 10rem;
+    color: #fff;
 }
-
-footer a {
-    text-transform: uppercase;
-}
-nav a:first-child {
-    text-transform: uppercase;
-    font-size: 50px;
-}
-
-nav a:last-child {
-    text-transform: uppercase;
-    font-size: 50px;
-}
-
-nav a:nth-child(2) {
-    text-transform: uppercase;
-    font-size: 50px;
-}*/

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce - Home</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -26,27 +30,32 @@
 
     <div class="hero"></div>
 
-    <section>
+    <section class="contenedor categorias">
         <h2>Categoria de <span> Productos </span></h2>
 
-        <div>
-            <img src="img/categoria1.jpg" alt="categoria">  
-            <a href="#">Oficina</a>  
+        <div class="listado-categorias">
+            <div class="categoria">
+                <img src="img/categoria1.jpg" alt="categoria">  
+                <a href="#">Oficina</a>  
+            </div>
+            <div class="categoria">
+                <img src="img/categoria2.jpg" alt="categoria">    
+                <a href="#">Hogar</a>
+            </div>
+            <div class="categoria">
+                <img src="img/categoria3.jpg" alt="categoria">    
+                <a href="#">Cocina</a>
+            </div>
         </div>
-        <div>
-            <img src="img/categoria2.jpg" alt="categoria">    
-            <a href="#">Hogar</a>
-        </div>
-        <div>
-            <img src="img/categoria3.jpg" alt="categoria">    
-            <a href="#">Cocina</a>
-        </div>
+        
     </section>
 
     <section class="sobre-nosotros">
-        <div>
-            <h2>Sobre Nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis nostrum quos et dignissimos quidem amet, iste possimus expedita. Earum sequi odit deleniti saepe assumenda minus eos illum facere repudiandae.</p>
+        <div class="contenedor sobre-nosotros-flexbox">
+            <div class="texto-nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis nostrum quos et dignissimos quidem amet, iste possimus expedita. Earum sequi odit deleniti saepe assumenda minus eos illum facere repudiandae.</p>
+            </div>
         </div>
     </section>
 
